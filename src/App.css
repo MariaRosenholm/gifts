@@ -97,6 +97,25 @@ button:disabled {
   animation-iteration-count: 1;
 }
 
+#score {
+  background-image: url("./components/assets/pictures/snowflake.svg");
+  background-size: 20vh;
+  background-position: 0vh -1vh;
+  height: 18vh;
+  width: 10.5vw;
+  position: fixed;
+  top: 40vh;
+  right: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#score p {
+  font-family: "Vast Shadow", cursive;
+  color: rgb(233, 76, 76);
+}
+
 /* ####### POPUP ####### */
 #popUp {
   position: fixed;
