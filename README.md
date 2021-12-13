@@ -1,8 +1,8 @@
-# Speed game
+# Toss gifts to the sleigh
 
 Business College Helsinki school assignment with React.
 Speed game which is very familiar for Finns from Speden pelit.
-The main aim is to clic the lighted buttons in correct order and as fast as possible.
+I have made my own Christmas version out of it!
 
 ## Built with:
 
@@ -39,4 +39,4 @@ https://opengameart.org/content/deck-the-halls-christmas-song-203
 
 ## Screenshot:
 
-![Screenshot of the application homepage](.src/components/assets/pictures/Screenshot.png)
+![Screenshot of the application homepage](Screenshot.png)
