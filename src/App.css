@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Vast+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+.App {
+  cursor: url(/src/components/assets/pictures/elf.svg), default;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url(/src/components/assets/pictures/background.jpg);
+  background-size: 100%;
+  background-position: 0vh -25vh;
+  padding: 5vh;
+}
+
+body {
+  font-family: "Petit Formal Script", cursive;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  text-align: left;
+  height: 100vh;
+  font-size: 3rem;
+  color: rgb(191, 206, 212);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  margin-bottom: 5vh;
+  font-size: 5rem;
+  width: 35vh;
+}
+
+button {
+  font-size: 3.5rem;
+  padding-bottom: 2vh;
+  color: rgb(233, 76, 76);
+  border: none;
+}
+
+button:disabled {
+  opacity: 0%;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+  position: fixed;
+  top: 10vh;
+  right: 5vw;
+  background-image: url("./components/assets/pictures/snowflake.svg");
+  background-size: 25vh;
+  background-position: 0vh -1vh;
+  height: 25vh;
+  width: 13vw;
+  background-color: unset;
+  font-family: "Vast Shadow", cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding-right: 20vh;
+}
+
+.circle {
+  width: 10vw;
+  height: 18vh;
+  margin: 5vh 2vw 0vh 2vw;
+  padding-top: 5%;
+  cursor: url(/src/components/assets/pictures/elf.svg), default;
+}
+
+.active {
+  background-image: url("./components/assets/pictures/gift.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation-name: drop;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.hide {
+  animation-name: toss;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+/* ####### POPUP ####### */
+#popUp {
+  position: fixed;
+  top: 25%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+#card {
+  width: 39%;
+  height: 120%;
+  background-color: rgb(191, 206, 212);
+  background-image: url("./components/assets/pictures/snowflake.svg");
+  background-position: 30vh 5vw;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  z-index: 3;
+  padding-bottom: 2vh;
+  border-radius: 5px;
   color: white;
+  padding: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+#overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: black;
+  opacity: 85%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  font-size: 4rem;
+  margin: 4vh 0vw 5vh 0vw;
+}
+
+#card button {
+  width: 5vw;
+  height: 8vh;
+  border: unset;
+  background-color: unset;
+  box-shadow: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(233, 45, 45);
+  font-size: 4rem;
+  position: fixed;
+  top: 21vh;
+  right: 30vw;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-35vh);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10vh);
+  }
+  70% {
+    transform: translateY(-6vh);
+  }
+  80% {
+    transform: translateY(55vh);
+  }
+  90% {
+    transform: translateY(60vh);
+  }
+  100% {
+    transform: translateY(61vh);
+  }
+}
+
+@keyframes toss {
+  0% {
+    transform: translate(0vw, -50vh);
+    background-size: 90%;
+    width: 8vw;
+    height: 15vh;
+  }
+  50% {
+    transform: translate(10vw, -50vh);
+    background-size: 70%;
+    width: 6vw;
+    height: 8vh;
+  }
+  90% {
+    transform: translate(15vw, -50vh);
+    background-size: 10%;
+    width: 4vw;
+    height: 6vh;
+  }
+  100% {
+    transform: translate(20vw, -50vh);
+    background-size: 0%;
+    width: 0vw;
+    height: 0vh;
   }
 }
