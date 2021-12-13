@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   text-align: left;
   height: 100vh;
-  font-size: 2rem;
+  font-size: 4rem;
   color: rgb(191, 206, 212);
 }
 
@@ -38,12 +38,12 @@ code {
 
 h1 {
   margin-bottom: 5vh;
-  font-size: 5rem;
+  font-size: 4.5rem;
   width: 35vh;
 }
 
 button {
-  font-size: 3.2rem;
+  font-size: 3rem;
   padding-bottom: 2vh;
   color: rgb(233, 76, 76);
   border: none;
@@ -136,7 +136,7 @@ button:disabled {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 4vh 0vw 5vh 0vw;
 }
 
