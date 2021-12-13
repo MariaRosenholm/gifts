@@ -91,19 +91,19 @@ class App extends Component {
         message: "You left elves in trouble! No one will get gifts this year!",
       });
     }
-    if (this.state.score >= 10) {
+    if (this.state.score >= 10 && this.state.score <= 50) {
       this.setState({
         message: "You are getting hang of this!",
       });
-    } else if (this.state.score > 50) {
+    } else if (this.state.score > 50 && this.state.score <= 150) {
       this.setState({
         message: "Good job! Keep on going!",
       });
-    } else if (this.state.score > 100) {
+    } else if (this.state.score > 150 && this.state.score <= 250) {
       this.setState({
         message: "We will keep you here all year round!",
       });
-    } else if (this.state.score > 200) {
+    } else if (this.state.score > 400) {
       this.setState({
         message: "You are pro now. Here is your tonttulakki!",
       });
