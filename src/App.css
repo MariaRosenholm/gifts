@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   text-align: left;
   height: 100vh;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: rgb(191, 206, 212);
 }
 
@@ -43,7 +43,7 @@ h1 {
 }
 
 button {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   padding-bottom: 2vh;
   color: rgb(233, 76, 76);
   border: none;
@@ -156,7 +156,7 @@ h2 {
 
 @keyframes drop {
   0% {
-    transform: translateY(-35vh);
+    transform: translateY(-80vh);
   }
   50% {
     transform: translateY(-10vh);
